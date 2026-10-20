@@ -1,0 +1,10 @@
+@"
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
+__pycache__/
+node_modules/
+.vscode/
+.idea/
+"@ | Set-Content .gitignore
