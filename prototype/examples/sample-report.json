@@ -1,0 +1,28 @@
+
+{
+  "status": "completed",
+  "total_findings": 3,
+  "findings": [
+    {
+      "rule_id": "TF-001",
+      "severity": "HIGH",
+      "file": "main.tf",
+      "description": "SSH port 22 is open to all IP addresses.",
+      "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+      "rule_id": "DF-001",
+      "severity": "MEDIUM",
+      "file": "Dockerfile",
+      "description": "Mutable latest image tag detected.",
+      "recommendation": "Use a specific image version or digest."
+    },
+    {
+      "rule_id": "DF-002",
+      "severity": "MEDIUM",
+      "file": "Dockerfile",
+      "description": "Container explicitly runs as root.",
+      "recommendation": "Use a non-root user when possible."
+    }
+  ]
+}
