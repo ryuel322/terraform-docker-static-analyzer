@@ -17,13 +17,15 @@ Readable reports with explanations and recommendations
 Evaluation of the tool against a baseline on a prepared test set
 
 ## Team
-**Student:**Dayana Kulmagambetova, SE-2425 - Project management, requirements analysis, literature review, system and technology comparison, architecture and design, implementation, testing and evaluation, documentation
-**Supervisor:**Omirzak Islam
+**Student:** Dayana Kulmagambetova, SE-2425 - Project management, requirements analysis, literature review, system and technology comparison, architecture and design, implementation, testing and evaluation, documentation
+**Supervisor:** Omirzak Islam
 
 ## Scope and current status
 
 **In scope:** static analysis of Terraform (.tf, state/plan JSON) and Dockerfiles; security rules; drift detection from static artifacts; report generation.
+
 **Out of scope:** access to live cloud infrastructure, automatic remediation, support for other IaC languages.
+
 **Status:** analysis and design stage (pre-defense 1). No runnable code yet.
 
 ## Technologies
