@@ -21,7 +21,7 @@ Additional team members and responsibilities will be documented if applicable.
 
 ## 3. Project Milestones
 
-### Milestone 1 — First Pre-Defense
+### Milestone 1 - First Pre-Defense
 Date: October 24, 2026
 Project proposal and literature review.
 Existing systems and technology comparisons.
@@ -29,15 +29,15 @@ Requirements specification and architecture diagrams.
 Prototype materials and evaluation plan.
 GitHub and YouTrack documentation.
 
-### Milestone 2 — Second Pre-Defense
-Date: To be confirmed by the university.
+### Milestone 2 - Second Pre-Defense
+
 Implementation of Terraform and Dockerfile parsers.
 Development of security detection rules.
 Implementation of offline configuration-state comparison.
 CLI development and initial testing.
 
-### Milestone 3 — Final Pre-Defense
-Date: To be confirmed by the university.
+### Milestone 3 - Final 
+
 Completed implementation and integration.
 Testing and performance evaluation.
 Comparison with baseline tools.
