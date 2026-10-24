@@ -1,0 +1,32 @@
+
+@startuml
+title Component Diagram Go IaC Static Analyzer
+
+top to bottom direction
+skinparam componentStyle rectangle
+
+package "Go IaC Static Analyzer" {
+  [CLI] as CLI
+  [Input Loader] as Input
+  [Terraform Parser\nHashiCorp HCL v2] as TF
+  [Dockerfile Parser\nMoby BuildKit] as Docker
+  [Terraform State Reader] as State
+  [Security Rule Engine] as Rules
+  [Configuration-State Comparator] as Compare
+  [JSON Report Generator] as Report
+}
+
+CLI --> Input
+Input --> TF
+Input --> Docker
+Input --> State
+
+TF --> Rules
+Docker --> Rules
+TF --> Compare
+State --> Compare
+
+Rules --> Report
+Compare --> Report
+
+@enduml

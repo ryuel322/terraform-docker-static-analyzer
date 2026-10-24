@@ -48,6 +48,7 @@ Final documentation and project demonstration.
 The following risks may affect project development:
 
 ### Risk 1: Complex Terraform Parsing
+<<<<<<< Updated upstream
 - **Probability:** Medium
 - **Impact:** High
 - **Mitigation:** Use HashiCorp HCL v2 and incremental testing to handle complex configurations.
@@ -76,6 +77,36 @@ The following risks may affect project development:
 - **Probability:** Medium
 - **Impact:** High
 - **Mitigation:** Process configuration files locally and exclude sensitive values from generated reports.
+=======
+Probability: Medium
+Impact: High
+Mitigation: Use HashiCorp HCL v2 and incremental testing to handle complex configurations.
+
+### Risk 2: False Positives in Security Detection
+Probability: Medium
+Impact: High
+Mitigation: Validate security rules using predefined test cases.
+
+### Risk 3: Incorrect Interpretation of Terraform State Differences
+Probability: High
+Impact: High
+Mitigation: Limit supported attributes and distinguish potential configuration inconsistencies from actual infrastructure drift.
+
+### Risk 4: Implementation Delays
+Probability: Medium
+Impact: High
+Mitigation: Prioritize MVP features and regularly monitor project deadlines.
+
+### Risk 5: Insufficient User Feedback
+Probability: Medium
+Impact: Medium
+Mitigation: Conduct 3–5 interviews with potential users to validate project requirements.
+
+### Risk 6: Exposure of Sensitive Configuration Data
+Probability: Medium
+Impact: High
+Mitigation: Process configuration files locally and exclude sensitive values from generated reports.
+>>>>>>> Stashed changes
 
 ## 5. Project Dependencies
 

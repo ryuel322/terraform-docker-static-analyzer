@@ -1,0 +1,20 @@
+
+@startuml
+title System Context Diagram
+top to bottom direction
+
+actor "Developer-Student" as User
+
+rectangle "Go IaC Static Analyzer\n(CLI)" as Analyzer
+rectangle "Terraform Files (.tf)" as TF
+rectangle "Dockerfiles" as DF
+rectangle "Terraform State JSON\n(Optional)" as State
+rectangle "JSON Report" as Report
+
+User -- Analyzer : Runs scan
+TF -- Analyzer : Configuration
+DF -- Analyzer : Configuration
+State -- Analyzer : State snapshot
+Analyzer -- Report : Generates findings
+
+@enduml
