@@ -1,0 +1,32 @@
+
+@startuml
+title Use Case Diagram IaC Static Analyzer
+
+left to right direction
+
+actor "Developer / Student" as User
+
+rectangle "Terraform/Docker Static Analyzer" {
+    usecase "Scan Terraform Files" as UC1
+    usecase "Scan Dockerfiles" as UC2
+    usecase "Detect Security Issues" as UC3
+    usecase "Detect Drift-Prone Patterns" as UC4
+    usecase "Compare Configuration\nwith Terraform State" as UC5
+    usecase "Generate JSON Report" as UC6
+}
+
+User --> UC1
+User --> UC2
+User --> UC5
+
+UC1 ..> UC3 : <<include>>
+UC2 ..> UC3 : <<include>>
+
+UC1 ..> UC4 : <<include>>
+UC2 ..> UC4 : <<include>>
+
+UC1 ..> UC6 : <<include>>
+UC2 ..> UC6 : <<include>>
+UC5 ..> UC6 : <<include>>
+
+@enduml
