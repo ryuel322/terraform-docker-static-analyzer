@@ -23,8 +23,8 @@ The analyzer will:
 
 The prototype includes two sample files:
 
-- `examples/main.tf` — Terraform configuration containing a publicly accessible SSH rule.
-- `examples/Dockerfile` — Dockerfile containing a mutable image tag and explicit root execution.
+`examples/main.tf` - Terraform configuration containing a publicly accessible SSH rule.
+`examples/Dockerfile` - Dockerfile containing a mutable image tag and explicit root execution.
 
 These files demonstrate typical configuration security issues.
 
@@ -33,17 +33,17 @@ These files demonstrate typical configuration security issues.
 The expected output is provided in `examples/sample-report.json`.
 
 Each finding contains:
-- Rule identifier
-- Severity level
-- Affected file
-- Issue description
-- Recommended corrective action
+Rule identifier
+Severity level
+Affected file
+Issue description
+Recommended corrective action
 
 ## 5. User Interaction
 
 The intended workflow is:
 
-**User → CLI → File Parsing → Security Analysis → JSON Report**
+**User - CLI - File Parsing - Security Analysis - JSON Report**
 
 Users provide local configuration files and review the generated findings. No cloud credentials are required for static analysis.
 
